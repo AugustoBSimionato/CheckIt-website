@@ -1,123 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6482982266">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-itunes-app" content="app-id=6482982266" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>CheckIt</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">
-            <a href="index.html" >
-                <img src="assets/checkit-icon.png" alt="Sofa Logo">
-                <span>CheckIt</span>
-            </a>
-        </div>
-        <nav class="nav">
-            <a href="features.html" class="link-button">Funcionalidades</a>
-            <a href="realesenotes.html" class="link-button">Notas de versão</a>
-            <a href="https://apps.apple.com/br/app/checkit/id6482982266?l=en-GB" class="download-button">Download</a>
-        </nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/checkit-icon.png" alt="Sofa Logo" />
+          <span>CheckIt</span>
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="nav">
+        <a href="features.html" class="link-button">Funcionalidades</a>
+        <a href="realesenotes.html" class="link-button">Notas de versão</a>
+        <a
+          href="https://apps.apple.com/br/app/checkit/id6482982266?l=en-GB"
+          class="download-button"
+          >Download</a
+        >
+      </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <img src="assets/checkit-icon.png" alt="CheckIt icon"/>
-                <h1>Fique Organizado</h1>
-                <p>Crie rastreadores de qualquer coisa e receba notificações te lembrando, simples assim.</p>
-                <div class="hero-buttons">
-                    <a href="https://apps.apple.com/br/app/checkit/id6482982266?l=en-GB" class="button1">Baixar CheckIt</a>
-                    <a href="features.html" class="button2">Veja as funcionalidades</a>
-                </div>
-            </div>
-        </section>
+      <section class="hero">
+        <div class="hero-content">
+          <img src="assets/checkit-icon.png" alt="CheckIt icon" />
+          <h1>Fique Organizado</h1>
+          <p>
+            Crie rastreadores de qualquer coisa e receba notificações te
+            lembrando, simples assim.
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="https://apps.apple.com/br/app/checkit/id6482982266?l=en-GB"
+              class="button1"
+              >Baixar CheckIt</a
+            >
+            <a href="features.html" class="button2">Veja as funcionalidades</a>
+          </div>
+        </div>
+      </section>
 
-        <section class="features">
-            <div class="features-content">
-                <div class="features-image">
-                    <img src="assets/checkit-iphone.png" alt="CheckIt app on phone">
+      <section class="features">
+        <div class="features-content">
+          <div class="features-image">
+            <img src="assets/checkit-iphone.png" alt="CheckIt app on phone" />
+          </div>
+          <div class="features-text">
+            <h2>O lugar dos seus lembretes</h2>
+            <h3>“Nada muito sofrido”</h3>
+            <p>
+              A maioria dos app possuem uma interface poluída. CheckIt é dos
+              poucos apps de produtividade projetado intencionalmente para ser
+              simples.
+            </p>
+            <div class="features-list">
+              <div class="feature-item">
+                <img src="assets/target.svg" alt="Capture in Seconds Icon" />
+                <div>
+                  <h4>Novo rastreador em segundos</h4>
+                  <p>
+                    Adicionar rastreadores ao CheckIt é fácil, apenas adicione
+                    um nome, a frequência e a hora que deseja receber a
+                    notificação.
+                  </p>
                 </div>
-                <div class="features-text">
-                    <h2>O lugar dos seus lembretes</h2>
-                    <h3>“Nada muito sofrido”</h3>
-                    <p>A maioria dos app possuem uma interface poluída. CheckIt é dos poucos apps de produtividade projetado intencionalmente para ser simples.</p>
-                    <div class="features-list">
-                        <div class="feature-item">
-                            <img src="assets/target.svg" alt="Capture in Seconds Icon">
-                            <div>
-                                <h4>Novo rastreador em segundos</h4>
-                                <p>Adicionar rastreadores ao CheckIt é fácil, apenas adicione um nome, a frequência e a hora que deseja receber a notificação.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <img src="assets/list.svg" alt="Keep Things Tidy Icon">
-                            <div>
-                                <h4>Adicione mais contexto</h4>
-                                <p>Cada rastreador possui sua própria lista do que tem que ser feito.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <img src="assets/anything.svg" alt="Add Anything Icon">
-                            <div>
-                                <h4>Rastreie basicamente qualquer coisa</h4>
-                                <p>Tarefas, contas a pagar, capítulos lidos de um livro, remédios para tomar, e assim vai…</p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="feature-item">
+                <img src="assets/list.svg" alt="Keep Things Tidy Icon" />
+                <div>
+                  <h4>Adicione mais contexto</h4>
+                  <p>
+                    Cada rastreador possui sua própria lista do que tem que ser
+                    feito.
+                  </p>
                 </div>
+              </div>
+              <div class="feature-item">
+                <img src="assets/anything.svg" alt="Add Anything Icon" />
+                <div>
+                  <h4>Rastreie basicamente qualquer coisa</h4>
+                  <p>
+                    Tarefas, contas a pagar, capítulos lidos de um livro,
+                    remédios para tomar, e assim vai…
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="cta">
-            <div class="cta-content">
-                <h2>Comece a se organizar hoje</h2>
-                <p>Tudo o que você precisa fazer é clicar no botão abaixo.</p>
-                <a href="https://apps.apple.com/br/app/checkit/id6482982266?l=en-GB" class="cta-button">Baixar CheckIt</a>
-            </div>
-        </section>
+      <section class="cta">
+        <div class="cta-content">
+          <h2>Comece a se organizar hoje</h2>
+          <p>Tudo o que você precisa fazer é clicar no botão abaixo.</p>
+          <a
+            href="https://apps.apple.com/br/app/checkit/id6482982266?l=en-GB"
+            class="cta-button"
+            >Baixar CheckIt</a
+          >
+        </div>
+      </section>
     </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="assets/checkit-icon.png" alt="Sofa Logo" class="logo">
-                <span>CheckIt</span>
-            </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h3>Produto</h3>
-                    <ul>
-                        <li><a href="roadmap.html">Roadmap</a></li>
-                        <li><a href="realesenotes.html">Notas de versão</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Nossas redes</h3>
-                    <ul>
-                        <li><a href="#">Threads</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Legal</h3>
-                    <ul>
-                        <li><a href="#">Privacidade</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2024 Feito por Augusto Simionato</p>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
-</body>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="assets/checkit-icon.png" alt="Sofa Logo" class="logo" />
+          <span>CheckIt</span>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Produto</h3>
+            <ul>
+              <li><a href="roadmap.html">Roadmap</a></li>
+              <li><a href="realesenotes.html">Notas de versão</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Nossas redes</h3>
+            <ul>
+              <li><a href="#">Threads</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacidade</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Feito por Augusto Simionato</p>
+      </div>
+    </footer>
+    
+  </body>
 </html>

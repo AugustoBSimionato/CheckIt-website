@@ -33,7 +33,7 @@ body {
 
 .link-button {
   text-decoration: none;
-  color: #1E1E1E;
+  color: #1e1e1e;
   margin: 0 15px;
   font-size: 16px;
 }
@@ -73,136 +73,78 @@ body {
   align-items: center;
 }
 
-/* HERO */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 90vh;
-  padding: 0 20px;
+/* Estilo do content */
+hr.solid {
+  border-top: 1px solid #c3c3c3;
 }
 
-.hero-content {
-  max-width: 800px;
+span {
+  font-weight: 600;
 }
 
-.hero-content img {
-  width: 150px;
-  height: 150px;
+.content-mobile {
+  display: none;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #333;
+.content {
+  animation: appear 1s ease-in-out;
+  margin: 2rem 8rem;
+  align-content: center;
 }
 
-.hero p {
-  font-size: 20px;
-  margin-bottom: 40px;
-  color: #666;
+.content-1 {
+  margin-bottom: 2rem;
 }
 
-.hero-buttons {
-  display: flex;
-  justify-content: center;
+.content-1 h1 {
+  margin-bottom: 2rem;
 }
 
-.hero-buttons .button1 {
-  margin: 0 10px;
-  padding: 15px 55px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s;
+.content-1 p {
+  margin-bottom: 0.8rem;
 }
 
-.hero-buttons .button1:hover {
-  background-color: #0073ee;
+.content-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.hero-buttons .button2 {
-  margin: 0 10px;
-  padding: 15px 30px;
-  color: #1E1E1E;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s;
-  border: 1.5px solid #1E1E1E;
+.content-2 h2 {
+  margin-bottom: 2rem;
 }
 
-/* Features Section */
-.features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
+.content-2 p {
+  margin-bottom: 0.8rem;
 }
 
-.features-content {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 5rem;
+.content-3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.features-image img {
-  width: 300px;
-  height: 609.69px;
-  margin-right: 5rem;
+.content-3 h3 {
+  margin-bottom: 1.5rem;
 }
 
-.features-text {
-  max-width: 600px;
+.content-3 p {
+  margin-bottom: 1rem;
 }
 
-.features-text h2 {
-  font-size: 16px;
-  color: #007bff;
-  margin-bottom: 10px;
+.content-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.features-text h3 {
-  font-size: 24px;
-  color: #555;
-  margin-bottom: 20px;
+.content-4 h2 {
+  margin-bottom: 2rem;
 }
 
-.features-text p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
+.content-4 p {
+  margin-bottom: 0.8rem;
 }
 
-.features-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.feature-item img {
-  padding-top: 28px;
-  width: 40px;
-  height: 40px;
-}
-
-.feature-item h4 {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.feature-item p {
-  font-size: 16px;
-  color: #666;
+.content-4 a {
+  color: black;
 }
 
 /* Call-to-Action Section */
@@ -360,14 +302,6 @@ footer {
     justify-content: space-between;
   }
 
-  .hero {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 65vh;
-    padding: 0 20px;
-  }
-
   .hero h1 {
     font-size: 32px;
   }
@@ -376,32 +310,77 @@ footer {
     font-size: 18px;
   }
 
-  .hero-content img {
-    width: 90px;
-    height: 90px;
+  /* Estilo do content */
+  .content {
+    display: none;
   }
 
-  .hero-buttons {
-    display: flex;
-    flex-direction: column;
+  .content-mobile {
+    animation: appear 1s ease-in-out;
+    display: contents;
+    font-family: "Poppins", sans-serif;
   }
 
-  .hero-buttons .button2 {
-    margin-top: 15px;
-  }
-
-  .features-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .features-image img {
-    margin-right: 0;
+  .content-1-mobile {
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
     margin-bottom: 2rem;
   }
 
-  .features-text {
-    text-align: left;
+  .content-1-mobile h1 {
+    margin-bottom: 2rem;
   }
 
+  .content-1-mobile p {
+    margin-bottom: 0.8rem;
+  }
+
+  .content-2-mobile {
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-2-mobile h2 {
+    margin-bottom: 2rem;
+  }
+
+  .content-2-mobile p {
+    margin-bottom: 0.8rem;
+  }
+
+  .content-3-mobile {
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-3-mobile h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .content-3-mobile p {
+    margin-bottom: 1rem;
+  }
+
+  .content-4-mobile {
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-4-mobile h2 {
+    margin-bottom: 2rem;
+  }
+
+  .content-4-mobile p {
+    margin-bottom: 0.8rem;
+  }
+
+  .content-4-mobile a {
+    color: black;
+  }
 }

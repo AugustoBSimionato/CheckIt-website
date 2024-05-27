@@ -6,9 +6,12 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 .logo a {
@@ -65,6 +68,22 @@ body {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Hamburger Menu Styles */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Release Notes Section */
 .features-section {
   display: flex;
@@ -72,7 +91,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 45vh;
+  height: 35vh;
 }
 
 .section-subtitle {
@@ -240,4 +259,93 @@ footer {
   margin: 0;
   font-size: 14px;
   color: #aaa;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .link-button,
+  .download-button {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .link-button-selected {
+    margin: 0.5rem;
+  }
+
+  .download-button {
+    margin-bottom: 30px;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .features-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 25vh;
+  }
+
+  .features-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-image img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .features-text {
+    text-align: center;
+  }
+  
+  .section-title {
+    color: #1e1e1e;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .version-history-list {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+  }
 }
