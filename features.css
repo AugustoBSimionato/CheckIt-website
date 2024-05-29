@@ -379,4 +379,8 @@ footer {
     width: 100%;
     max-width: 300px;
   }
+
+  .card-content p {
+    padding-bottom: 2rem;
+  }
 }
