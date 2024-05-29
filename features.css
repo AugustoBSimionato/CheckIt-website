@@ -370,7 +370,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    height: 310vh;
+    height: 330vh;
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
@@ -378,9 +378,5 @@ footer {
   .card {
     width: 100%;
     max-width: 300px;
-  }
-
-  .card-content p {
-    padding-bottom: 2rem;
   }
 }
