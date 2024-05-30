@@ -36,6 +36,23 @@ body {
   color: #1E1E1E;
   margin: 0 15px;
   font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.link-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #006ce0;
+  transition: width 0.3s ease;
+}
+
+.link-button:hover::after {
+  width: 100%;
 }
 
 .link-button:hover {
@@ -303,10 +320,27 @@ footer {
 .footer-column ul li a {
   color: #aaa;
   text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.footer-column ul li a:hover::after {
+  width: 100%;
 }
 
 .footer-column ul li a:hover {
-  text-decoration: underline;
+  color: #fff;
 }
 
 .footer-bottom {
