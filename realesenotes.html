@@ -17,7 +17,7 @@
     <header class="header">
         <div class="logo">
           <a href="index.html">
-            <img src="assets/checkit-icon.png" alt="Sofa Logo" />
+            <img src="assets/checkit-icon.png" alt="Logo" />
             <span>CheckIt</span>
           </a>
         </div>
@@ -75,17 +75,28 @@
         </section>
 
         <section class="cta">
-            <div class="cta-content">
-                <h2>Comece a se organizar hoje</h2>
-                <p>Tudo o que você precisa fazer é clicar no botão abaixo.</p>
-                <a href="https://apps.apple.com/br/app/checkit/id6482982266?l=en-GB" class="cta-button">Baixar CheckIt</a>
+            <div class="newsletter-container">
+                <div class="newsletter-box">
+                    <div class="newsletter-icon">
+                        <img src="assets/mail-icon.png" alt="Mail Icon">
+                    </div>
+                    <h2 class="newsletter-title">CheckIt Newsletter</h2>
+                    <p class="newsletter-description">
+                        Mantenha-se atualizado sobre as últimas notícias do CheckIt. Só enviamos quando temos algo interessante para lhe contar.
+                    </p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" id="email" name="email" required class="newsletter-input" placeholder="Email Address">
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                    <p class="newsletter-footer">Sem spam. Cancele a inscrição a qualquer momento.</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="assets/checkit-icon.png" alt="Sofa Logo" class="logo">
+                <img src="assets/checkit-icon.png" alt="Logo" class="logo">
                 <span>CheckIt</span>
             </div>
             <div class="footer-links">
@@ -117,6 +128,20 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://js.hsforms.net/forms/v2.js"></script>
+    <script>
+        // HubSpot form submission via JavaScript
+        hbspt.forms.create({
+            portalId: "46345134",
+            formId: "15fdf3e5-9a8d-45d0-923b-8bf15112a1b5",
+            target: '.newsletter-form',
+            onFormSubmit: function() {
+                alert('Inscrição bem-sucedida!');
+            },
+            onFormError: function() {
+                alert('Ocorreu um erro ao tentar enviar sua inscrição.');
+            }
+        });
+    </script>
 </body>
 </html>
