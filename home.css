@@ -152,6 +152,10 @@ body {
   border: 1.5px solid #1E1E1E;
 }
 
+.producthunt {
+  margin-top: 1.5rem;
+}
+
 /* Features Section */
 .features {
   display: flex;
